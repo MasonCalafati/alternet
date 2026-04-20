@@ -11,12 +11,19 @@ export default function Contact() {
     e.preventDefault()
     setIsLoading(true)
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          access_key: '21a16431-d804-41ff-b10a-7e7978ff4c36',
+          subject: `New inquiry from ${form.name}${form.company ? ` — ${form.company}` : ''}`,
+          from_name: form.name,
+          replyto: form.email,
+          ...form,
+        }),
       })
-      if (!res.ok) throw new Error('Failed')
+      const data = await res.json()
+      if (!data.success) throw new Error('Failed')
       setSent(true)
     } catch {
       alert('Something went wrong. Please email us directly at info@alternetcom.net')
