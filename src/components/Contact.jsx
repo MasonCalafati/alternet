@@ -26,7 +26,7 @@ export default function Contact() {
       if (!data.success) throw new Error('Failed')
       setSent(true)
     } catch {
-      alert('Something went wrong. Please email us directly at info@alternetcom.net')
+      alert('Something went wrong. Please email us directly at info@networko2.net')
     } finally {
       setIsLoading(false)
     }
@@ -89,13 +89,13 @@ export default function Contact() {
               className="space-y-4"
             >
               <a
-                href="mailto:info@alternetcom.net"
+                href="mailto:info@networko2.net"
                 className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors cursor-pointer group"
               >
                 <div className="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center group-hover:bg-blue-600/30 transition-colors">
                   <Mail size={18} className="text-blue-400" />
                 </div>
-                <span className="text-sm font-medium">info@alternetcom.net</span>
+                <span className="text-sm font-medium">info@networko2.net</span>
               </a>
 
               <div className="pt-6 p-6 rounded-2xl border border-white/8 bg-white/4">

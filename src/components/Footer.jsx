@@ -56,11 +56,11 @@ export default function Footer() {
               Executive advisory services for the connectivity, infrastructure, and network technology ecosystem.
             </p>
             <a
-              href="mailto:info@alternetcom.net"
+              href="mailto:info@networko2.net"
               className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm transition-colors cursor-pointer"
             >
               <Mail size={14} />
-              info@alternetcom.net
+              info@networko2.net
             </a>
           </div>
 
@@ -85,7 +85,7 @@ export default function Footer() {
             © {new Date().getFullYear()} AlterNet Communications LLC. All rights reserved.
           </p>
           <p className="text-slate-600 text-xs">
-            Long Island, NY • info@alternetcom.net
+            Long Island, NY • info@networko2.net
           </p>
         </div>
       </div>

@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     <div style="margin-top:24px;padding:16px;background:#f8faff;border-radius:8px;border-left:4px solid #2563eb;">
       <p style="margin:0;color:#333;line-height:1.7;">${message.replace(/\n/g, '<br/>')}</p>
     </div>
-    <p style="margin-top:24px;color:#999;font-size:12px;">Sent via alternetcom.net contact form</p>
+    <p style="margin-top:24px;color:#999;font-size:12px;">Sent via networko2.net contact form</p>
   </div>
 </body>
 </html>`;
@@ -42,8 +42,8 @@ export default async function handler(req, res) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        from: 'Alternet Contact <contact@alternetcom.net>',
-        to: ['info@alternetcom.net'],
+        from: 'Alternet Contact <contact@networko2.net>',
+        to: ['info@networko2.net'],
         reply_to: email,
         subject: `New inquiry from ${name}${company ? ` — ${company}` : ''}`,
         html,

@@ -44,7 +44,7 @@ export default function About() {
                   commercial growth, and operational execution in the telecom industry.
                 </p>
                 <div className="flex items-center gap-3">
-                  <a href="mailto:info@alternetcom.net"
+                  <a href="mailto:info@networko2.net"
                     className="flex items-center gap-2 px-4 py-2 bg-blue-600/20 border border-blue-500/30 text-blue-300 text-sm rounded-lg hover:bg-blue-600/30 transition-colors cursor-pointer">
                     <Mail size={14} />
                     Contact
