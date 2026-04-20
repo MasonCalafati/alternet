@@ -49,13 +49,12 @@ export default function About() {
                     <Mail size={14} />
                     Contact
                   </a>
-                  <a href="https://www.linkedin.com/in/glenncalafati/"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => window.open('https://www.linkedin.com/in/glenncalafati/', '_blank')}
                     className="flex items-center gap-2 px-4 py-2 bg-white/8 border border-white/15 text-slate-300 text-sm rounded-lg hover:bg-white/15 transition-colors cursor-pointer">
                     <ExternalLink size={14} />
                     LinkedIn
-                  </a>
+                  </button>
                 </div>
               </div>
 
